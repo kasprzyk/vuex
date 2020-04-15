@@ -13,6 +13,11 @@ const routes = [
     component: EventList
   },
   {
+    path: '/user/:username',
+    name: 'user',
+    component: () => import(/* webpackChunkName: "about" */ '../views/User.vue')
+  },
+  {
     path: '/event-create',
     name: 'event-create',
     // route level code-splitting
