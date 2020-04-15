@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Event List</router-link> |
-      <router-link to="/event-create">Event show</router-link>
-    </div>
+    <div id="nav"></div>
     <router-view />
   </div>
 </template>
