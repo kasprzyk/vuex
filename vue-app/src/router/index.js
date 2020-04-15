@@ -13,11 +13,6 @@ const routes = [
     component: EventList
   },
   {
-    path: '/user/:username',
-    name: 'user',
-    component: () => import(/* webpackChunkName: "about" */ '../views/User.vue')
-  },
-  {
     path: '/event-create',
     name: 'event-create',
     // route level code-splitting
@@ -28,15 +23,17 @@ const routes = [
   },
 
   {
-    path: '/event-show',
+    path: '/event/:id',
     name: 'event-show',
     // route level code-splitting
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/EventShow.vue')
+      import(/* webpackChunkName: "about" */ '../views/EventShow.vue'),
+    props: true
   }
 ]
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 })
 
