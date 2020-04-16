@@ -30,6 +30,8 @@ export default {
   color: rgba(0, 0, 0, 0.4);
   font-size: 1rem;
   font-weight: 600;
+  width: 150px;
+  height: 150px;
 }
 .icon {
   stroke: currentColor;
