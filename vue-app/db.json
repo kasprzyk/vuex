@@ -13,7 +13,7 @@
       "location": "Meow Town",
       "date": "2019-01-03T21:54:00.000Z",
       "time": "2:00",
-      "attendees": []
+      "attendees": [{ "name": "asd" }, { "name": "asd" }]
     },
     {
       "id": 8419988,
