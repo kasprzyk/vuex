@@ -34,7 +34,7 @@ export default new Vuex.Store({
     fetchEvents({ commit }, { perPage, page }) {
       EventService.getEvents(perPage, page)
         .then(response => {
-          commit('SET_EVENTS', response.data)
+          commit('SET_EVENT', response.data)
         })
         .catch(error => {
           console.log('There was an error:', error.response)
