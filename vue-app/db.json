@@ -44,6 +44,96 @@
       "date": "2019-02-02T23:27:00.000Z",
       "time": "1:00",
       "attendees": []
+    },
+    {
+      "id": 4582797,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "category 1",
+      "organizer": "Adam",
+      "title": "Test",
+      "description": "Yay",
+      "location": "Warsaw ",
+      "date": "2019-02-02T23:27:00.000Z",
+      "time": "1:00",
+      "attendees": []
+    },
+    {
+      "id": 4582797,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "category 1",
+      "organizer": "Adam",
+      "title": "Test",
+      "description": "Yay",
+      "location": "Warsaw ",
+      "date": "2019-02-02T23:27:00.000Z",
+      "time": "1:00",
+      "attendees": []
+    },
+    {
+      "id": 4582797,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "category 1",
+      "organizer": "Adam",
+      "title": "Test",
+      "description": "Yay",
+      "location": "Warsaw ",
+      "date": "2019-02-02T23:27:00.000Z",
+      "time": "1:00",
+      "attendees": []
+    },
+    {
+      "id": 4582797,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "category 1",
+      "organizer": "Adam",
+      "title": "Test",
+      "description": "Yay",
+      "location": "Warsaw ",
+      "date": "2019-02-02T23:27:00.000Z",
+      "time": "1:00",
+      "attendees": []
+    },
+    {
+      "id": 4582797,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "category 1",
+      "organizer": "Adam",
+      "title": "Test",
+      "description": "Yay",
+      "location": "Warsaw ",
+      "date": "2019-02-02T23:27:00.000Z",
+      "time": "1:00",
+      "attendees": []
+    },
+    {
+      "id": 4582797,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "category 1",
+      "organizer": "Adam",
+      "title": "Test",
+      "description": "Yay",
+      "location": "Warsaw ",
+      "date": "2019-02-02T23:27:00.000Z",
+      "time": "1:00",
+      "attendees": []
     }
   ]
 }
