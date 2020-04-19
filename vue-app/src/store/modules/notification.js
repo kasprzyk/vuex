@@ -4,7 +4,7 @@ export const state = {
   notifications: []
 }
 let nextId = 1
-export const mutuations = {
+export const mutations = {
   PUSH(state, notification) {
     state.notifications.push({
       ...notification,
