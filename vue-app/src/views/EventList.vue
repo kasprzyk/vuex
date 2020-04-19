@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Events for {{ user.name }}</h1>
+    <h1>Events for {{ user.user.name }}</h1>
     <EventCard v-for="event in events" :key="event.id" :event="event" />
     <BaseIcon />
     <template v-if="page != 1">
