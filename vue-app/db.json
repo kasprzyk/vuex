@@ -13,7 +13,14 @@
       "location": "Iława",
       "date": "2019-01-03T21:54:00.000Z",
       "time": "2:00",
-      "attendees": [{ "name": "asd" }, { "name": "asd" }]
+      "attendees": [
+        {
+          "name": "asd"
+        },
+        {
+          "name": "asd"
+        }
+      ]
     },
     {
       "id": 8419988,
@@ -134,6 +141,10 @@
       "date": "2019-02-02T23:27:00.000Z",
       "time": "1:00",
       "attendees": []
+    },
+    {
+      "isTrusted": true,
+      "id": 8419989
     }
   ]
 }
