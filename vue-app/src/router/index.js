@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 //import EventCreate from '../views/EventCreate.vue'
 import EventList from '../views/EventList.vue'
 //import EventShow from '../views/EventShow.vue'
+import NProgress from 'nprogress'
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,15 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   routes
+})
+router.beforeEach((routeTo, routeFrom, next) => {
+  // Start the route progress bar.
+  NProgress.start()
+  next()
+})
+router.afterEach(() => {
+  // Complete the animation of the route progress bar.
+  NProgress.done()
 })
 
 export default router
