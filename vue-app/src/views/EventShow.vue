@@ -33,25 +33,14 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-import NProgress from 'nprogress'
-import store from '@/store/index'
 export default {
-  props: ['id'],
-  beforeRouteEnter(routeTo, routeFrom, next) {
-    NProgress.start()
-    store.dispatch('event/fetchEvent', routeTo.params.id).then(() => {
-      NProgress.done() // When the action is done complete progress bar
-      next() // Only once this is called does the navigation continue
-    })
-  },
-
-  // created() {
-  //   this.$store.dispatch('event/fetchEvent', this.id) // We can also use this.$store.dispatch('event/fetchEvent', this.id)
-  // },
-  computed: mapState({
-    event: state => state.event.event
-  })
+  props: {
+    event: {
+      // Simply receive the event to render
+      type: Object,
+      required: true
+    }
+  }
   // methods: {
   //   ...mapActions(['event/fetchEvent'])
   // }

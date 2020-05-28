@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import EventList from '../views/EventList.vue'
 //import EventShow from '../views/EventShow.vue'
 import NProgress from 'nprogress'
+import store from '../store/index'
 
 Vue.use(VueRouter)
 
@@ -29,7 +30,14 @@ const routes = [
     // route level code-splitting
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/EventShow.vue'),
-    props: true
+    props: true,
+    beforeEnter(routeTo, routeFrom, next) {
+      // before this route is loaded
+      store.dispatch('event/fetchEvent', routeTo.params.id).then(event => {
+        routeTo.params.event = event
+        next()
+      })
+    }
   }
 ]
 
