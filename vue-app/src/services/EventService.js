@@ -16,6 +16,7 @@ apiClient.interceptors.request.use(config => {
 })
 apiClient.interceptors.response.use(response => {
   NProgress.done()
+  console.log('response', response)
   return response
 })
 
