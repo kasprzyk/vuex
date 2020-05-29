@@ -43,6 +43,7 @@
           <option v-for="time in times" :key="time">{{ time }}</option>
         </select>
       </div>
+      <BaseButton type="submit" buttonClass="-fill-gradient">Submit</BaseButton>
     </form>
   </div>
 </template>
