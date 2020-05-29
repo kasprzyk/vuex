@@ -1,13 +1,27 @@
 <template>
   <div>
     <label v-if="label">{{ label }}</label>
-    <input :id="label" :value="value" v-bind="$attrs" @input="updateValue" />
+    <select :value="value" @change="updateValue" v-bind="$attrs">
+      <option
+        v-for="option in options"
+        :value="option"
+        :key="option"
+        :selected="option === value"
+      >
+        {{ option }}
+      </option>
+    </select>
   </div>
 </template>
+
 <script>
 export default {
   inheritAttrs: false,
   props: {
+    options: {
+      type: Array,
+      required: true
+    },
     value: [String, Number],
     label: String
   },
