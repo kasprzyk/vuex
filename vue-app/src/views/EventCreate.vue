@@ -8,7 +8,12 @@
       </select>
 
       <h3>Name & describe your event</h3>
-      <BaseInput label="Title" v-model="event.title" />
+      <BaseInput
+        v-model="event.title"
+        label="Title"
+        type="text"
+        placeholder="Add an event title"
+      />
 
       <div class="field">
         <label>Description</label>
